@@ -1,0 +1,25 @@
+﻿<Window x:Class="PR6_msg.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:PR6_msg"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        mc:Ignorable="d"
+		Background="DimGray"
+        Title="LoginWindow" Height="550" Width="350">
+	<Grid>
+		<StackPanel VerticalAlignment="Center">
+			<TextBlock Text="Паленый телегрум" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontFamily="Century Gothic" FontWeight="Bold"/>
+			<TextBlock Text="Вход" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontFamily="Century Gothic" FontWeight="Bold"/>
+			<ui:TextBox x:Name="ClientName" VerticalAlignment="Center" Height="40" Width="300" Margin="0,30,0,0"/>
+			<ui:TextBox x:Name="IPbox" VerticalAlignment="Center" Text="127.0.0.1" Height="40" Width="300" Margin="0,10,0,0"/>
+			<ui:TextBox x:Name="Portbox" VerticalAlignment="Center" Text="1234" Height="40" Width="300" Margin="0,10,0,0"/>
+		</StackPanel>
+		<WrapPanel Margin="0,0,0,20" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+			<ui:Button x:Name="Server" Content="Сервер" Height="30" Width="100" Margin="5,5,5,5" Click="Server_Click"/>
+			<ui:Button x:Name="Client" Content="Клиент" Height="30" Width="100" Margin="5,5,5,5" Click="Client_Click"/>
+			<ui:Button x:Name="Admin" Content="Админ" Height="30" Width="100" Margin="5,5,5,5" Click="Admin_Click"/>
+		</WrapPanel>
+	</Grid>
+</Window>
